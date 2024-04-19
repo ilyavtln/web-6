@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/scripts/slider.js" => "17111976983831","/scripts/bootstrap.js" => "1710152139149493",]; ?>

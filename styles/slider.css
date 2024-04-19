@@ -1,0 +1,126 @@
+.abs-centered {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.d-down-xs-none {
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-list {
+  overflow: hidden;
+}
+
+.slider-item {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  will-change: transform;
+  color: rgba(255, 255, 255, 0.8);
+
+  @media (min-width: 768px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.slider-transition-none {
+  transition: none;
+}
+
+/* кнопки влево и вправо */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background: rgb(0 0 0 / 40%);
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background: rgb(0 0 0 / 60%);
+}
+
+.slider-btn-hide {
+  display: none;
+}
+
+.slider-btn-prev {
+  left: 0;
+}
+
+.bordered-left {
+  border-radius: 0 1rem 1rem 0 !important;
+}
+
+.bordered-right {
+  border-radius: 1rem 0 0 1rem !important;
+}
+
+.slider-btn-next {
+  right: 0;
+}
+
+/* индикаторы */
+.slider-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.slider-indicator {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+}
+
+.slider-indicator-active {
+  background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/styles/bootstrap.css" => "1710152139293081","/styles/style.css" => "17111737221217","/styles/slider.css" => "17112535982174",]; ?>
